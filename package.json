@@ -1,0 +1,42 @@
+{
+  "name": "express-response-kit",
+  "version": "0.1.0",
+  "description": "A lightweight response formatting utility for Express.js APIs",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "express",
+    "expressjs",
+    "api",
+    "response",
+    "pagination",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "express": "^4.18.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "express": "^5.1.0",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.0"
+  }
+}
